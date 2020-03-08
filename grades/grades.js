@@ -1,4 +1,12 @@
+window.onload = () => {
+    console.log(window.jQuery);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('grades').prepend('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>');
-    $.ajax();
+    $.ajax({
+        url: 'https://culearn.carleton.ca/moodle/my/',
+        success: (result) => {
+            console.log(result);
+        }
+    });
 });
