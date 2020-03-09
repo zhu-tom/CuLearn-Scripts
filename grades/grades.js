@@ -9,6 +9,7 @@ function checkLoaded() {
 }
 
 function findClasses() {
+    console.log('getting classes');
     let classes = [];
     let courses = document.querySelector('.courses').querySelectorAll('.course');
     const regex = /(id=[0-9]+)/g;
