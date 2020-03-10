@@ -16,9 +16,12 @@ function findClasses() {
     for (course of courses) {
         const link = course.firstChild;
         const id = link.href.match(regex);
-        let section = {link: link, grades: []};
+        const linkEl = document.createElement('a');
+        linkEl.innerText = link.innerText;
+        linkEl.href = `https://culearn.carleton.ca/moodle/grade/report/user/index.php?${id}`;
+        let section = {link: linkEl, grades: []};
         $.ajax({
-            url: `https://culearn.carleton.ca/moodle/grade/report/user/index.php?${id}`,
+            url: linkEl.href,
             success: (result) => {
                 const gradesPage = new DOMParser().parseFromString(result, "text/html");
                 const gradesTable = gradesPage.querySelector('table');
