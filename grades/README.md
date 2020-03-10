@@ -1,6 +1,6 @@
 # Latest Version:
 
-    <script id="grades" src="https://cdn.jsdelivr.net/gh/zhu-tom/CuLearn-Scripts@d1139149942e75e3225eed865a5371f2bce8c78f/grades/grades.js"></script>
+    <script id="grades" src="https://cdn.jsdelivr.net/gh/zhu-tom/CuLearn-Scripts@c2b7c0340bad9151d0d763dfc87333bb3e885b14/grades/grades.js"></script>
 
 1. Go to cuLearn dashboard.
 2. Click "Customize this page" at top right.
