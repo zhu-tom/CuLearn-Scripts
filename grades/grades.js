@@ -29,7 +29,7 @@ function findClasses() {
                 for (let i = 0; i < rows.length-1; i++) {
                     let c = {}
                     const row = rows[i];
-                    if (row.children[0].classList.contains('column-leader')) continue;
+                    if (row.children.length === 0 || row.children[0].classList.contains('column-leader')) continue;
                     c.item = row.children[0].firstChild;
                     c.grade = row.children[1].innerText;
                     c.range = row.children[2].innerHTML;
